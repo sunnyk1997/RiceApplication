@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Rice Application</string>
+    <string name="enter_your_ten_digit_mobile_number">Enter your Ten digit mobile number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="welcome_user">Welcome User !</string>
+    <string name="verify_your_number">Verify Your Number</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="num">123456</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="working">Working..</string>
+    <string name="msg2">Please enter your Country Code and Phone number for verification</string>
+    <string name="verified">Verified!</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+</resources>

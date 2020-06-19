@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/orange_light</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
+        <!--        <item name="textAppearanceOverline"></item>-->
+
+    </style>
+    <style name="MainActivityTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/orange_light</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
+        <!--        <item name="textAppearanceOverline"></item>-->
+
+    </style>
+    <style name="SplashScreen" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.MyDialog">
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="MyAppMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--        <item name="colorAccent">@color/colorAccent</item>-->
+
+
+        <item name="colorPrimary">#6200ee</item>
+        <item name="colorPrimaryVariant">#3700b3</item>
+        <!-- Status bar color (even if colorPrimaryVariant is set) -->
+        <item name="colorPrimaryDark">#3700b3</item>
+
+        <item name="colorSecondary">#03DAC6</item>
+        <item name="colorSecondaryVariant">#018786</item>
+
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <item name="colorError">#FFFFFF</item>
+        <item name="colorOnError">#B00020</item>
+
+        <item name="colorOnPrimarySurface">#B00020</item>
+
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="actionMenuTextColor">#ffff00</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="colorOnBackground">#000000</item>
+        <!--        <item name=“shapeAppearanceSmallComponent">@style/ShapeTest</item>-->
+        <item name="android:fontFamily"></item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeTest</item>
+        <!--        <item name="materialButtonStyle">@style/ButtonStyle</item>&ndash;&gt;-->
+        <item name="materialButtonOutlinedStyle">@style/ButtonStyle</item>
+
+        <item name="shapeAppearanceMediumComponent">@style/MyMediumShape</item>
+
+        <item name="materialCardViewStyle">@style/MyCardStyle</item>
+    </style>
+
+    <!--    Shape Theming-->
+
+    <style name="ShapeTest" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <!--        <item name="strokeWidth">8dp</item>-->
+        <item name="strokeColor">#000000</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="MyMediumShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <!--        <item name="strokeWidth">8dp</item>-->
+        <!--        <item name="strokeColor">#000000</item>-->
+        <item name="cornerSize">2dp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+
+
+    <!--    Widget.MaterialComponents.Button.OutlinedButton-->
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="MyCardStyle"  parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">8dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="android:padding">16dp</item>
+
+    </style>
+</resources>
+

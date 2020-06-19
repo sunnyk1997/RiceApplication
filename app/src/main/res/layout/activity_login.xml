@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_above="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/verify_your_number"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_above="@+id/phone_number"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:text="@string/msg2"/>
+    <EditText
+        android:id="@+id/country_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="2"
+        android:inputType="number"
+        android:hint="91"
+        android:layout_below="@+id/tv2"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/phone_number"/>
+    <EditText
+        android:maxLength="10"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/phone_number"
+        android:hint="@string/enter_mobile_number"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_below="@+id/phone_number"
+        android:layout_margin="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/btn"
+        android:text="@string/generate_otp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_form_feedback"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/login_form_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/working"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:layout_below="@+id/btn"
+        android:visibility="invisible"/>
+</RelativeLayout>
